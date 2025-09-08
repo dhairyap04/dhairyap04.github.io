@@ -124,20 +124,20 @@ const Footer: React.FC = () => {
                 <div className="flex items-center space-x-3">
                   <span className="text-electric-blue">📧</span>
                   <a
-                    href="mailto:dhairyap04@example.com"
+                    href="mailto:d.prajapati3430@gmail.com"
                     className="text-gray-400 hover:text-electric-blue transition-colors duration-300"
                   >
-                    dhairyap04@example.com
+                    d.prajapati3430@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-electric-blue">📍</span>
-                  <span className="text-gray-400">Your City, State</span>
+                  <span className="text-gray-400">Edmonton, Alberta</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-electric-blue">💼</span>
                   <a
-                    href="https://linkedin.com/in/dhairyap04"
+                    href="https://linkedin.com/in/dprajapati3430"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-electric-blue transition-colors duration-300"
@@ -169,21 +169,6 @@ const Footer: React.FC = () => {
             >
               © {currentYear} Dhairya Prajapati. All rights reserved.
             </motion.p>
-
-            <motion.div
-              className="flex items-center space-x-6"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-gray-400 text-sm">Built with</span>
-              <div className="flex items-center space-x-2">
-                <span className="text-red-500">❤️</span>
-                <span className="text-gray-400 text-sm">and</span>
-                <span className="text-electric-blue font-semibold">React</span>
-              </div>
-            </motion.div>
 
             {/* Back to Top Button */}
             <motion.button

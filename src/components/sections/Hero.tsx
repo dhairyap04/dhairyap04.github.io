@@ -147,32 +147,7 @@ const Hero: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Scroll Indicator */}
-          <motion.div
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2, duration: 0.8 }}
-          >
-            <motion.div
-              className="flex flex-col items-center text-electric-blue/70"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <span className="text-sm font-fira-code mb-2">Scroll Down</span>
-              <motion.div
-                className="w-6 h-10 border-2 border-electric-blue/50 rounded-full flex justify-center"
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <motion.div
-                  className="w-1 h-3 bg-electric-blue rounded-full mt-2"
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                />
-              </motion.div>
-            </motion.div>
-          </motion.div>
+          {/* Scroll Indicator removed per user request */}
         </motion.div>
       </div>
 
