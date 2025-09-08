@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
 // Components
+import SEO from './components/common/SEO';
 import Navigation from './components/common/Navigation';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
     <HelmetProvider>
       <Router>
         <div className="App min-h-screen bg-space-navy">
+          <SEO />
           <ParticleBackground />
           <Navigation />
           <main>
