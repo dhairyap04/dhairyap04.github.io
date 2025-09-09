@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 // import emailjs from 'emailjs-com';
 import { contactInfo, socialLinks } from '../../data/portfolio';
+import Icon from '../ui/Icon';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -296,9 +297,11 @@ const Contact: React.FC = () => {
                       whileHover={{ scale: 1.05, y: -2 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="text-2xl group-hover:scale-110 transition-transform duration-300">
-                        {social.icon}
-                      </div>
+                      <Icon 
+                        icon={social.icon}
+                        className="text-2xl group-hover:scale-110 transition-transform duration-300"
+                        size={32}
+                      />
                       <span className="font-medium text-white group-hover:text-electric-blue transition-colors duration-300">
                         {social.name}
                       </span>

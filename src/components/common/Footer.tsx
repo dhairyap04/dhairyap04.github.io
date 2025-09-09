@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
 import { socialLinks } from '../../data/portfolio';
+import Icon from '../ui/Icon';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -70,9 +71,11 @@ const Footer: React.FC = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <span className="text-xl group-hover:scale-110 transition-transform duration-300">
-                      {social.icon}
-                    </span>
+                    <Icon 
+                      icon={social.icon}
+                      className="text-xl group-hover:scale-110 transition-transform duration-300"
+                      size={24}
+                    />
                   </motion.a>
                 ))}
               </div>
