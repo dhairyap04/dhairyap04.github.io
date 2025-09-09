@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { skills } from '../../data/portfolio';
+import Icon from '../ui/Icon';
 
 const Skills: React.FC = () => {
   const [ref, inView] = useInView({
@@ -152,9 +153,11 @@ const Skills: React.FC = () => {
                         }}
                       >
                         {/* Skill Icon */}
-                        <span className="text-lg group-hover:scale-110 transition-transform duration-300">
-                          {skill.icon}
-                        </span>
+                        <Icon
+                          icon={skill.icon || ''}
+                          className="text-lg group-hover:scale-110 transition-transform duration-300"
+                          size={24}
+                        />
                         
                         {/* Skill Name */}
                         <span className="group-hover:text-white transition-colors duration-300">
