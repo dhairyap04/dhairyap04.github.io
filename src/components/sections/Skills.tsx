@@ -155,8 +155,8 @@ const Skills: React.FC = () => {
                         {/* Skill Icon */}
                         <Icon
                           icon={skill.icon || ''}
-                          className="text-lg group-hover:scale-110 transition-transform duration-300"
-                          size={24}
+                          className="text-lg group-hover:scale-110 transition-transform duration-300 bg-transparent"
+                          size={28}
                         />
                         
                         {/* Skill Name */}

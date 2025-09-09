@@ -16,12 +16,25 @@ const Icon: React.FC<IconProps> = ({ icon, className = '', size = 24 }) => {
 
   // Otherwise, render as an image
   return (
-    <img 
-      src={icon} 
-      alt="icon"
-      className={`${className} object-contain`}
-      style={{ width: size, height: size }}
-    />
+    <div 
+      className={`inline-flex items-center justify-center ${className}`}
+      style={{ 
+        width: size, 
+        height: size,
+        backgroundColor: 'transparent',
+        mixBlendMode: 'luminosity', // This helps icons blend better with dark themes
+      }}
+    >
+      <img 
+        src={icon} 
+        alt="icon"
+        className="w-full h-full object-contain filter brightness-0 invert" // This will make the icons white
+        style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+        }}
+      />
+    </div>
   );
 };
 
