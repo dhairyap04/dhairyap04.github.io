@@ -81,67 +81,79 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce application with React frontend and Node.js backend",
-    longDescription: "A comprehensive e-commerce platform built with modern web technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The application demonstrates full-stack development skills and modern software engineering practices.",
+    title: "HealthMap360",
+    description: "Full-stack health monitoring application with React frontend and Node.js backend",
+    longDescription: "A comprehensive health monitoring platform built with modern web technologies. Features include user authentication, health data visualization, appointment scheduling, and admin dashboard. The application demonstrates full-stack development skills and modern software engineering practices.",
     image: "/api/placeholder/600/400",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe", "JWT"],
-    githubUrl: "https://github.com/dhairyap04/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.netlify.app",
+    technologies: ["Typescript", "Vite.js", "MongoDB", "Docker", "Stripe", "FastAPI"],
+    githubUrl: "https://github.com/dhairyap04/healthmap360",
+    liveUrl: "https://healthmap360-demo.netlify.app",
     category: "fullstack",
     featured: true
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Collaborative task management tool with real-time updates",
-    longDescription: "A modern task management application that allows teams to collaborate on projects. Features include real-time updates, drag-and-drop functionality, team management, and progress tracking. Built with React and Firebase for real-time synchronization.",
+    title: "Personal Portfolio Website",
+    description: "Showcase of my projects, skills, and experience",
+    longDescription: "A personal portfolio website built with Typescript, React and Tailwind CSS. Features include project showcases, skill highlights, and an experience timeline section. The website is fully responsive and optimized for performance.",
     image: "/api/placeholder/600/400",
-    technologies: ["React", "Firebase", "Material-UI", "Context API"],
-    githubUrl: "https://github.com/dhairyap04/task-manager",
-    liveUrl: "https://taskmanager-demo.netlify.app",
+    technologies: ["React", "Typescript", "Tailwind CSS", "Vite.js"],
+    githubUrl: "https://github.com/dhairyap04/dhairyap04.github.io",
+    liveUrl: "https://dhairyap04.github.io",
     category: "frontend",
     featured: true
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Interactive weather dashboard with location-based forecasts",
-    longDescription: "A responsive weather dashboard that provides current weather conditions and forecasts. Features include location-based weather, interactive maps, weather alerts, and historical data visualization. Demonstrates API integration and data visualization skills.",
+    title: "MealDrop",
+    description: "Interactive application that connects restaurants with surplus food to local shelters",
+    longDescription: "A responsive application that connects restaurants with surplus food to local shelters. Features include real-time food donation tracking, user authentication, and an admin dashboard for managing donations. Demonstrates full-stack development skills and modern web technologies.",
     image: "/api/placeholder/600/400",
     technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-    githubUrl: "https://github.com/dhairyap04/weather-dashboard",
-    liveUrl: "https://weather-dashboard-demo.netlify.app",
-    category: "frontend",
+    githubUrl: "https://github.com/dhairyap04/mealdrop",
+    liveUrl: "https://mealdrop-demo.netlify.app",
+    category: "mobile",
     featured: true
   },
   {
     id: 4,
-    title: "Algorithm Visualizer",
-    description: "Interactive visualization tool for sorting and searching algorithms",
-    longDescription: "An educational tool that visualizes various sorting and searching algorithms in real-time. Users can adjust array size, speed, and algorithm type to see how different algorithms perform. Built to help students understand algorithm complexity and behavior.",
+    title: "Orange Events",
+    description: "Interactive android application for event management and ticketing",
+    longDescription: "An interactive android application that allows users to create, manage, and attend events. Features include event creation, ticketing, user authentication, and real-time notifications. Built with a focus on user experience and mobile performance.",
     image: "/api/placeholder/600/400",
-    technologies: ["React", "D3.js", "TypeScript", "CSS Animations"],
-    githubUrl: "https://github.com/dhairyap04/algorithm-visualizer",
-    liveUrl: "https://algo-visualizer-demo.netlify.app",
+    technologies: ["Java", "AndroidStudio", "Firebase", "XML"],
+    githubUrl: "https://github.com/CMPUT301F24orange/orange-events",
+    liveUrl: "https://orange-events-demo.netlify.app",
+    category: "mobile",
+    featured: true
+  },
+  {
+    id: 5,
+    title: "BrickBreaker",
+    description: "Interactive android application for a classic brick-breaking game",
+    longDescription: "An interactive android application that brings the classic brick-breaking game back with a twist. Features include multiple levels, power-ups, and user authentication. Built with a focus on user experience and performance.",
+    image: "/api/placeholder/600/400",
+    technologies: ["Python", "PyGame", "Git"],
+    githubUrl: "https://github.com/dhairyap04/BrickBreaker",
+    liveUrl: "https://brickbreaker-demo.netlify.app",
     category: "frontend",
-    featured: false
+    featured: true
   }
 ];
 
 export const experience: Experience[] = [
   {
     id: 1,
-    title: "Computer Science Student",
-    company: "Your University",
-    location: "Your City, State",
+    title: "Computing Science Major with Business Minor",
+    company: "University of Alberta",
+    location: "Edmonton, Alberta",
     startDate: "2022",
     endDate: "2026",
     description: [
-      "Pursuing Bachelor's degree in Computer Science",
+      "Pursuing Bachelor's degree in Computing Science with a minor in Business",
       "Maintaining strong academic performance with focus on software engineering",
       "Completed coursework in Data Structures, Algorithms, and Software Engineering",
-      "Active in computer science clubs and coding competitions"
+      "Active in computer science clubs and hackathons"
     ],
     technologies: ["Java", "Python", "C++", "Data Structures", "Algorithms"],
     type: "education"
@@ -149,26 +161,26 @@ export const experience: Experience[] = [
   {
     id: 2,
     title: "Software Development Intern",
-    company: "Tech Company",
-    location: "Remote",
-    startDate: "Summer 2023",
-    endDate: "Fall 2023",
+    company: "Government of Alberta",
+    location: "Edmonton, Alberta",
+    startDate: "May 2025",
+    endDate: "December 2025",
     description: [
       "Developed responsive web applications using React and Node.js",
       "Collaborated with senior developers on feature implementation",
       "Participated in code reviews and agile development processes",
       "Contributed to improving application performance and user experience"
     ],
-    technologies: ["React", "Node.js", "JavaScript", "Git", "Agile"],
+    technologies: ["Python", "Django", "TypeScript", "SQL", "Git", "Agile"],
     type: "work"
   },
   {
     id: 3,
-    title: "Open Source Contributor",
-    company: "Various Projects",
+    title: "Software Engineering Intern",
+    company: "ShoeBox Studios",
     location: "Remote",
-    startDate: "2023",
-    endDate: "Present",
+    startDate: "May 2024",
+    endDate: "August 2024",
     description: [
       "Contributed to open source projects on GitHub",
       "Fixed bugs and implemented new features",
@@ -176,6 +188,22 @@ export const experience: Experience[] = [
       "Collaborated with global developer community"
     ],
     technologies: ["Git", "GitHub", "JavaScript", "Python", "Documentation"],
+    type: "work"
+  },
+  {
+    id: 4,
+    title: "Admin Co-Lead and Software Team Member",
+    company: "AlbertaSat",
+    location: "Edmonton, Alberta",
+    startDate: "January 2024",
+    endDate: "Present",
+    description: [
+      "Contributed to open source projects on GitHub",
+      "Fixed bugs and implemented new features",
+      "Improved documentation and code quality",
+      "Collaborated with global developer community"
+    ],
+    technologies: ["Git", "GitHub", "JavaScript", "Python", "Documentation", "C++", "Arduino", "SolidWorks"],
     type: "project"
   }
 ];
@@ -189,7 +217,7 @@ export const contactInfo: ContactInfo = {
 };
 
 export const socialLinks = [
-  { name: "GitHub", url: "https://github.com/dhairyap04", icon: "🐙" },
+  { name: "GitHub", url: "https://github.com/dhairyap04", icon: "./src/assets/images/github_logo.png" },
   { name: "LinkedIn", url: "https://linkedin.com/in/dprajapati3430", icon: "💼" },
   { name: "Email", url: "mailto:d.prajapati3430@gmail.com", icon: "📧" },
   { name: "Resume", url: "src/resume.pdf", icon: "📄" }
