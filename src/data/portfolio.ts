@@ -3,18 +3,18 @@ import linkedinIcon from '../assets/images/linkedin_logo.png';
 import dockerIcon from '../assets/images/docker_logo.png';
 import pythonIcon from '../assets/images/python_logo.jpeg';
 import javaIcon from '../assets/images/java_logo.png';
-import reactIcon from '../assets/images/react_logo.png';
+import reactIcon from '../assets/images/react_logo.jpeg';
 import javascriptIcon from '../assets/images/javascript_logo.png';
 import typescriptIcon from '../assets/images/typescript_logo.png';
-import html5Icon from '../assets/images/html_logo.png';
-import css3Icon from '../assets/images/css_logo.png';
+import html5Icon from '../assets/images/html_logo.jpeg';
+import css3Icon from '../assets/images/css_logo.jpeg';
 import tailwindIcon from '../assets/images/tailwind_logo.png';
-import nodejsIcon from '../assets/images/node_logo.png';
+import nodejsIcon from '../assets/images/node_logo.jpeg';
 import sqlIcon from '../assets/images/sql_logo.png';
 import gitIcon from '../assets/images/git_logo.png';
 import vscodeIcon from '../assets/images/vscode_logo.png';
 import algorithmsIcon from '../assets/images/algorithms_logo.png';
-import oopIcon from '../assets/images/oop_logo.png';
+import oopIcon from '../assets/images/oop_logo.jpeg';
 
 export interface Project {
   id: number;
