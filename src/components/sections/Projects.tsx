@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { projects, Project } from '../../data/portfolio';
+import Icon from '../ui/Icon';
+import gitHubIcon from '../../assets/images/github_logo.png';
 
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>('all');
@@ -157,7 +159,11 @@ const Projects: React.FC = () => {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                           >
-                            <span className="text-white">🐙</span>
+                            <Icon
+                              icon={gitHubIcon}
+                              className="text-white"
+                              size={24}
+                            />
                           </motion.a>
                         </div>
                       </motion.div>

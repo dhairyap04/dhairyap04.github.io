@@ -88,13 +88,13 @@ const Contact: React.FC = () => {
       link: null,
     },
     {
-      icon: linkedinIcon,
+      icon: <Icon icon={linkedinIcon} size={24} />,
       title: 'LinkedIn',
       value: 'Connect with me',
       link: contactInfo.linkedin,
     },
     {
-      icon: gitHubIcon,
+      icon: <Icon icon={gitHubIcon} size={24} />,
       title: 'GitHub',
       value: 'View my code',
       link: contactInfo.github,
