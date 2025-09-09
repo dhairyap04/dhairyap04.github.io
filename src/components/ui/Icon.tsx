@@ -21,14 +21,12 @@ const Icon: React.FC<IconProps> = ({ icon, className = '', size = 24 }) => {
       style={{ 
         width: size, 
         height: size,
-        backgroundColor: 'transparent',
-        mixBlendMode: 'luminosity', // This helps icons blend better with dark themes
       }}
     >
       <img 
         src={icon} 
         alt="icon"
-        className="w-full h-full object-contain filter brightness-0 invert" // This will make the icons white
+        className="w-full h-full object-contain"
         style={{
           maxWidth: '100%',
           maxHeight: '100%',
