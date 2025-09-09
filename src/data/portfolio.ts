@@ -217,8 +217,8 @@ export const contactInfo: ContactInfo = {
 };
 
 export const socialLinks = [
-  { name: "GitHub", url: "https://github.com/dhairyap04", icon: "./src/assets/images/github_logo.png" },
+  { name: "GitHub", url: "https://github.com/dhairyap04", icon: "/assets/images/github_logo.png" },
   { name: "LinkedIn", url: "https://linkedin.com/in/dprajapati3430", icon: "💼" },
   { name: "Email", url: "mailto:d.prajapati3430@gmail.com", icon: "📧" },
-  { name: "Resume", url: "src/resume.pdf", icon: "📄" }
+  { name: "Resume", url: "/resume.pdf", icon: "📄" }
 ];
