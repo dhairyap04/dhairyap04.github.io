@@ -33,7 +33,7 @@ const About: React.FC = () => {
   };
 
   const stats = [
-    { label: "Projects Completed", value: "15+", icon: "🚀" },
+    { label: "Projects Completed", value: "7+", icon: "🚀" },
     { label: "Technologies Learned", value: "20+", icon: "💻" },
     { label: "Lines of Code", value: "50K+", icon: "📝" },
     { label: "Coffee Cups", value: "∞", icon: "☕" },
@@ -99,9 +99,7 @@ const About: React.FC = () => {
                 </p>
 
                 <p className="text-fluid-base text-gray-400 leading-relaxed">
-                  When I'm not coding, you can find me exploring new technologies, contributing 
-                  to open source projects, or working on personal projects that challenge me to 
-                  learn and grow.
+                  When I'm not coding, you can find me exploring new technologies by working on personal projects that challenge me to learn and grow, hiking up steep trails, or enjoying a competitive game of basketball.
                 </p>
               </div>
 

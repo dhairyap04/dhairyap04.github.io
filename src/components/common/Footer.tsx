@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
 import { socialLinks } from '../../data/portfolio';
 import Icon from '../ui/Icon';
+import gitHubIcon from '../../assets/images/github_logo.png';
+import linkedinIcon from '../../assets/images/linkedin_logo.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -138,7 +140,7 @@ const Footer: React.FC = () => {
                   <span className="text-gray-400">Edmonton, Alberta</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <span className="text-electric-blue">💼</span>
+                  <span className="text-electric-blue"><Icon icon={linkedinIcon} size={24} /></span>
                   <a
                     href="https://linkedin.com/in/dprajapati3430"
                     target="_blank"

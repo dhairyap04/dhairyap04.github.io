@@ -4,6 +4,8 @@ import { useInView } from 'react-intersection-observer';
 // import emailjs from 'emailjs-com';
 import { contactInfo, socialLinks } from '../../data/portfolio';
 import Icon from '../ui/Icon';
+import gitHubIcon from '../../assets/images/github_logo.png';
+import linkedinIcon from '../../assets/images/linkedin_logo.png';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -86,13 +88,13 @@ const Contact: React.FC = () => {
       link: null,
     },
     {
-      icon: '💼',
+      icon: linkedinIcon,
       title: 'LinkedIn',
       value: 'Connect with me',
       link: contactInfo.linkedin,
     },
     {
-      icon: '🐙',
+      icon: gitHubIcon,
       title: 'GitHub',
       value: 'View my code',
       link: contactInfo.github,

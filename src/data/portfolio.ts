@@ -1,4 +1,20 @@
 import githubIcon from '../assets/images/github_logo.png';
+import linkedinIcon from '../assets/images/linkedin_logo.png';
+import dockerIcon from '../assets/images/docker_logo.png';
+import pythonIcon from '../assets/images/python_logo.png';
+import javaIcon from '../assets/images/java_logo.png';
+import reactIcon from '../assets/images/react_logo.png';
+import javascriptIcon from '../assets/images/javascript_logo.png';
+import typescriptIcon from '../assets/images/typescript_logo.png';
+import html5Icon from '../assets/images/html_logo.png';
+import css3Icon from '../assets/images/css_logo.png';
+import tailwindIcon from '../assets/images/tailwind_logo.png';
+import nodejsIcon from '../assets/images/node_logo.png';
+import sqlIcon from '../assets/images/sql_logo.png';
+import gitIcon from '../assets/images/git_logo.png';
+import vscodeIcon from '../assets/images/vscode_logo.png';
+import algorithmsIcon from '../assets/images/algorithms_logo.png';
+import oopIcon from '../assets/images/oop_logo.png';
 
 export interface Project {
   id: number;
@@ -49,34 +65,34 @@ export const personalInfo = {
   email: "d.prajapati3430@gmail.com",
   github: "https://github.com/dhairyap04",
   linkedin: "https://www.linkedin.com/in/dprajapati3430/",
-  resumeUrl: "src/resume.pdf"
+  resumeUrl: "/resume.pdf"
 };
 
 export const skills: Skill[] = [
   // Frontend
-  { name: "React", level: 85, category: "frontend", icon: "⚛️" },
-  { name: "JavaScript", level: 90, category: "frontend", icon: "🟨" },
-  { name: "TypeScript", level: 75, category: "frontend", icon: "🔷" },
-  { name: "HTML5", level: 95, category: "frontend", icon: "🌐" },
-  { name: "CSS3", level: 90, category: "frontend", icon: "🎨" },
-  { name: "Tailwind CSS", level: 80, category: "frontend", icon: "💨" },
+  { name: "React", level: 85, category: "frontend", icon: reactIcon },
+  { name: "JavaScript", level: 90, category: "frontend", icon: javascriptIcon },
+  { name: "TypeScript", level: 75, category: "frontend", icon: typescriptIcon },
+  { name: "HTML5", level: 95, category: "frontend", icon: html5Icon },
+  { name: "CSS3", level: 90, category: "frontend", icon: css3Icon },
+  { name: "Tailwind CSS", level: 80, category: "frontend", icon: tailwindIcon },
   
   // Backend
-  { name: "Node.js", level: 70, category: "backend", icon: "🟢" },
-  { name: "Python", level: 85, category: "backend", icon: "🐍" },
-  { name: "Java", level: 80, category: "backend", icon: "☕" },
-  { name: "SQL", level: 75, category: "backend", icon: "🗄️" },
-  
+  { name: "Node.js", level: 70, category: "backend", icon: nodejsIcon },
+  { name: "Python", level: 85, category: "backend", icon: pythonIcon },
+  { name: "Java", level: 80, category: "backend", icon: javaIcon },
+  { name: "SQL", level: 75, category: "backend", icon: sqlIcon },
+
   // Tools
-  { name: "Git", level: 85, category: "tools", icon: "📝" },
-  { name: "GitHub", level: 90, category: "tools", icon: "🐙" },
-  { name: "VS Code", level: 95, category: "tools", icon: "💻" },
-  { name: "Docker", level: 60, category: "tools", icon: "🐳" },
+  { name: "Git", level: 85, category: "tools", icon: gitIcon },
+  { name: "GitHub", level: 90, category: "tools", icon: githubIcon },
+  { name: "VS Code", level: 95, category: "tools", icon: vscodeIcon },
+  { name: "Docker", level: 60, category: "tools", icon: dockerIcon },
   
   // Concepts
   { name: "Data Structures", level: 85, category: "concepts", icon: "📊" },
-  { name: "Algorithms", level: 80, category: "concepts", icon: "🧮" },
-  { name: "OOP", level: 90, category: "concepts", icon: "🏗️" },
+  { name: "Algorithms", level: 80, category: "concepts", icon: algorithmsIcon },
+  { name: "OOP", level: 90, category: "concepts", icon: oopIcon },
   { name: "Responsive Design", level: 85, category: "concepts", icon: "📱" },
 ];
 
@@ -220,7 +236,7 @@ export const contactInfo: ContactInfo = {
 
 export const socialLinks = [
   { name: "GitHub", url: "https://github.com/dhairyap04", icon: githubIcon },
-  { name: "LinkedIn", url: "https://linkedin.com/in/dprajapati3430", icon: "💼" },
+  { name: "LinkedIn", url: "https://linkedin.com/in/dprajapati3430", icon: linkedinIcon },
   { name: "Email", url: "mailto:d.prajapati3430@gmail.com", icon: "📧" },
   { name: "Resume", url: "/resume.pdf", icon: "📄" }
 ];
