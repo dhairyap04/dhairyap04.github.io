@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Blog', href: '#blog' },
+    // { name: 'Blog', href: '#blog' },
     { name: 'Resume', href: '/resume.pdf', isExternal: true },
   ];
 

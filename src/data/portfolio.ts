@@ -4,7 +4,7 @@ import { m } from "framer-motion";
 const githubIcon = '/images/github_logo.png';
 const linkedinIcon = '/images/linkedin_logo.png';
 const dockerIcon = '/images/docker_logo.png';
-const pythonIcon = '/images/python_logo.jpeg';
+const pythonIcon = '/images/new_python_logo.png';
 const javaIcon = '/images/java_logo.png';
 const reactIcon = '/images/react_logo.jpeg';
 const javascriptIcon = '/images/javascript_logo.png';
@@ -22,12 +22,12 @@ const cIcon = '/images/c_logo.png';
 const djangoIcon = '/images/django_logo.png';
 const flaskIcon = '/images/flask_logo.png';
 const mongoDBIcon = '/images/mongodb_logo.png';
-const linuxIcon = '/images/linux_logo.png';
+const linuxIcon = '/images/linux_logo.jpeg';
 const kubernetesIcon = '/images/kubernetes_logo.png';
-const bootstrapIcon = '/images/bootstrap_logo.png';
+const bootstrapIcon = '/images/bootstrap_logo.jpeg';
 const agileIcon = '/images/agile_logo.png';
 const restapiIcon = '/images/restapi_logo.png';
-const viteIcon = '/images/vite_logo.png';
+const viteIcon = '/images/vite_logo.jpeg';
 
 export interface Project {
   id: number;
