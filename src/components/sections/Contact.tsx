@@ -283,7 +283,7 @@ const Contact: React.FC = () => {
               </div>
 
               {/* Social Links */}
-              <div className="glass-morphism rounded-lg p-8">
+              {/* <div className="glass-morphism rounded-lg p-8">
                 <h3 className="text-2xl font-bold mb-6 gradient-text">
                   Follow me
                 </h3>
@@ -310,7 +310,7 @@ const Contact: React.FC = () => {
                     </motion.a>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Availability Status */}
               <motion.div

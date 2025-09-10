@@ -163,6 +163,52 @@ export const projects: Project[] = [
 export const experience: Experience[] = [
   {
     id: 1,
+    title: "Software Developer Intern",
+    company: "Government of Alberta - Ministry of Environment and Protected Areas",
+    location: "Edmonton, Alberta",
+    startDate: "May 2025",
+    endDate: "December 2025",
+    description: [
+      "Automated data processing for compliance reports from 200+ facilities, reducing processing time by 60%",
+      "Built and maintained data ingestion pipelines for oil and gas facility benchmarks",
+      "Optimized data retrieval with SQL integration, improving performance by 95%",
+      "Implemented comprehensive testing coverage for data pipeline modules"
+    ],
+    technologies: ["Python", "SQL", "Django", "ETL", "Unit Testing", "Git", "Data Pipeline"],
+    type: "work"
+  },
+  {
+    id: 2,
+    title: "Software Engineering Intern",
+    company: "ShoeBox Studios",
+    location: "Remote",
+    startDate: "May 2024",
+    endDate: "August 2024",
+    description: [
+      "Optimized product UI/UX using React and NodeJS",
+      "Managed database systems with Docker and Kubernetes deployment",
+      "Led development of company's official website with dynamic content integration"
+    ],
+    technologies: ["React", "NodeJS", "Docker", "Kubernetes", "HTML", "CSS", "JavaScript"],
+    type: "work"
+  },
+  {
+    id: 3,
+    title: "Admin Co-Lead and Software Team Member",
+    company: "AlbertaSat",
+    location: "Edmonton, Alberta",
+    startDate: "January 2024",
+    endDate: "Present",
+    description: [
+      "Implemented OBC simulation using a Zybo Z7 arduino for satellite subsystem testing",
+      "Developed UHF Transceiver simulation for Ex-Alta 3 satellite",
+      "Led administrative operations for a 300+ member satellite project team"
+    ],
+    technologies: ["Python", "Hardware Testing", "UHF Systems", "Project Management", "Team Leadership"],
+    type: "project"
+  },
+  {
+    id: 4,
     title: "Computing Science Major with Business Minor",
     company: "University of Alberta",
     location: "Edmonton, Alberta",
@@ -172,59 +218,11 @@ export const experience: Experience[] = [
       "Pursuing Bachelor's degree in Computing Science with a minor in Business",
       "Maintaining strong academic performance with focus on software engineering",
       "Completed coursework in Data Structures, Algorithms, and Software Engineering",
-      "Active in computer science clubs and hackathons"
+      "Active in computer science clubs, project-based groups, and hackathons"
     ],
     technologies: ["Java", "Python", "C++", "Data Structures", "Algorithms"],
     type: "education"
   },
-  {
-    id: 2,
-    title: "Software Development Intern",
-    company: "Government of Alberta",
-    location: "Edmonton, Alberta",
-    startDate: "May 2025",
-    endDate: "December 2025",
-    description: [
-      "Developed responsive web applications using React and Node.js",
-      "Collaborated with senior developers on feature implementation",
-      "Participated in code reviews and agile development processes",
-      "Contributed to improving application performance and user experience"
-    ],
-    technologies: ["Python", "Django", "TypeScript", "SQL", "Git", "Agile"],
-    type: "work"
-  },
-  {
-    id: 3,
-    title: "Software Engineering Intern",
-    company: "ShoeBox Studios",
-    location: "Remote",
-    startDate: "May 2024",
-    endDate: "August 2024",
-    description: [
-      "Contributed to open source projects on GitHub",
-      "Fixed bugs and implemented new features",
-      "Improved documentation and code quality",
-      "Collaborated with global developer community"
-    ],
-    technologies: ["Git", "GitHub", "JavaScript", "Python", "Documentation"],
-    type: "work"
-  },
-  {
-    id: 4,
-    title: "Admin Co-Lead and Software Team Member",
-    company: "AlbertaSat",
-    location: "Edmonton, Alberta",
-    startDate: "January 2024",
-    endDate: "Present",
-    description: [
-      "Contributed to open source projects on GitHub",
-      "Fixed bugs and implemented new features",
-      "Improved documentation and code quality",
-      "Collaborated with global developer community"
-    ],
-    technologies: ["Git", "GitHub", "JavaScript", "Python", "Documentation", "C++", "Arduino", "SolidWorks"],
-    type: "project"
-  }
 ];
 
 export const contactInfo: ContactInfo = {
