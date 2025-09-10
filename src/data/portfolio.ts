@@ -1,33 +1,33 @@
 import { m } from "framer-motion";
 
 // Using absolute paths for images from public folder
-const githubIcon = '/images/github_logo.png';
-const linkedinIcon = '/images/linkedin_logo.png';
-const dockerIcon = '/images/docker_logo.png';
+const githubIcon = '/images/new_github_logo.png';
+const linkedinIcon = '/images/new_linkedin_logo.png';
+const dockerIcon = '/images/new_docker_logo.png';
 const pythonIcon = '/images/new_python_logo.png';
-const javaIcon = '/images/java_logo.png';
-const reactIcon = '/images/react_logo.jpeg';
-const javascriptIcon = '/images/javascript_logo.png';
-const typescriptIcon = '/images/typescript_logo.png';
-const html5Icon = '/images/html_logo.jpeg';
-const css3Icon = '/images/css_logo.jpeg';
-const tailwindIcon = '/images/tailwind_logo.png';
-const nodejsIcon = '/images/node_logo.jpeg';
-const sqlIcon = '/images/sql_logo.png';
-const gitIcon = '/images/git_logo.png';
-const vscodeIcon = '/images/vscode_logo.png';
-const algorithmsIcon = '/images/algorithms_logo.png';
-const oopIcon = '/images/oop_logo.jpeg';
-const cIcon = '/images/c_logo.png';
-const djangoIcon = '/images/django_logo.png';
-const flaskIcon = '/images/flask_logo.png';
-const mongoDBIcon = '/images/mongodb_logo.png';
-const linuxIcon = '/images/linux_logo.jpeg';
-const kubernetesIcon = '/images/kubernetes_logo.png';
-const bootstrapIcon = '/images/bootstrap_logo.jpeg';
-const agileIcon = '/images/agile_logo.png';
-const restapiIcon = '/images/restapi_logo.png';
-const viteIcon = '/images/vite_logo.jpeg';
+const javaIcon = '/images/new_java_logo.png';
+const reactIcon = '/images/new_react_logo.png';
+const javascriptIcon = '/images/new_javascript_logo.png';
+const typescriptIcon = '/images/new_typescript_logo.png';
+const html5Icon = '/images/new_html_logo.png';
+const css3Icon = '/images/new_css_logo.png';
+const tailwindIcon = '/images/new_tailwind_logo.png';
+const nodejsIcon = '/images/new_node_logo.png';
+const sqlIcon = '/images/new_sql_logo.png';
+const gitIcon = '/images/new_git_logo.png';
+const vscodeIcon = '/images/new_vscode_logo.png';
+const algorithmsIcon = '/images/new_algorithms_logo.png';
+const oopIcon = '/images/new_oop_logo.png';
+const cIcon = '/images/new_c_logo.png';
+const djangoIcon = '/images/new_django_logo.png';
+const flaskIcon = '/images/new_flask_logo.png';
+const mongoDBIcon = '/images/new_mongodb_logo.png';
+const linuxIcon = '/images/new_linux_logo.png';
+const kubernetesIcon = '/images/new_kubernetes_logo.png';
+const bootstrapIcon = '/images/new_bootstrap_logo.png';
+const agileIcon = '/images/new_agile_logo.png';
+const restapiIcon = '/images/new_restapi_logo.png';
+const viteIcon = '/images/new_vite_logo.png';
 
 export interface Project {
   id: number;
@@ -86,9 +86,9 @@ export const skills: Skill[] = [
   { name: "React", level: 85, category: "frontend", icon: reactIcon },
   { name: "JavaScript", level: 90, category: "frontend", icon: javascriptIcon },
   { name: "TypeScript", level: 75, category: "frontend", icon: typescriptIcon },
-  { name: "HTML5", level: 95, category: "frontend", icon: html5Icon },
-  { name: "CSS3", level: 90, category: "frontend", icon: css3Icon },
-  { name: "Tailwind CSS", level: 80, category: "frontend", icon: tailwindIcon },
+  { name: "HTML", level: 95, category: "frontend", icon: html5Icon },
+  { name: "CSS", level: 90, category: "frontend", icon: css3Icon },
+  { name: "Tailwind", level: 80, category: "frontend", icon: tailwindIcon },
   { name: "Vite.js", level: 70, category: "frontend", icon: viteIcon },
   { name: "Bootstrap", level: 65, category: "frontend", icon: bootstrapIcon },
 
