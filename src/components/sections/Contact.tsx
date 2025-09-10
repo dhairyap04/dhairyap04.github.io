@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 // import emailjs from 'emailjs-com';
 import { contactInfo, socialLinks } from '../../data/portfolio';
 import Icon from '../ui/Icon';
-import gitHubIcon from '../../assets/images/github_logo.png';
-import linkedinIcon from '../../assets/images/linkedin_logo.png';
+import gitHubIcon from '../../assets/images/new_github_logo.png';
+import linkedinIcon from '../../assets/images/new_linkedin_logo.png';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -76,25 +76,25 @@ const Contact: React.FC = () => {
 
   const contactMethods = [
     {
-      icon: '📧',
+      icon: <Icon icon='📧' size={36} />,
       title: 'Email',
       value: contactInfo.email,
       link: `mailto:${contactInfo.email}`,
     },
+    // {
+    //   icon: <Icon icon='📍' size={36} />,
+    //   title: 'Location',
+    //   value: contactInfo.location,
+    //   link: null,
+    // },
     {
-      icon: '📍',
-      title: 'Location',
-      value: contactInfo.location,
-      link: null,
-    },
-    {
-      icon: <Icon icon={linkedinIcon} size={24} />,
+      icon: <Icon icon={linkedinIcon} size={36} />,
       title: 'LinkedIn',
       value: 'Connect with me',
       link: contactInfo.linkedin,
     },
     {
-      icon: <Icon icon={gitHubIcon} size={24} />,
+      icon: <Icon icon={gitHubIcon} size={36} />,
       title: 'GitHub',
       value: 'View my code',
       link: contactInfo.github,
@@ -131,7 +131,7 @@ const Contact: React.FC = () => {
             <motion.div variants={itemVariants}>
               <div className="glass-morphism rounded-lg p-8">
                 <h3 className="text-2xl font-bold mb-6 gradient-text">
-                  Send me a message
+                  Send Me a Message!
                 </h3>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
@@ -250,7 +250,7 @@ const Contact: React.FC = () => {
               {/* Contact Methods */}
               <div className="glass-morphism rounded-lg p-8">
                 <h3 className="text-2xl font-bold mb-6 gradient-text">
-                  Let's connect
+                  Let's Connect!
                 </h3>
                 
                 <div className="space-y-6">
@@ -318,13 +318,14 @@ const Contact: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="w-4 h-4 bg-green-500 rounded-full mx-auto mb-3 animate-pulse"></div>
+                <div className="w-4 h-4 bg-green-700 rounded-full mx-auto mb-3 animate-pulse"></div>
                 <h4 className="text-lg font-semibold text-white mb-2">
                   Available for opportunities
                 </h4>
-                <p className="text-gray-400 text-sm">
-                  I'm actively seeking internship and collaboration opportunities. 
-                  Let's discuss how we can work together!
+                <p className="text-gray-400 text-base">
+                  I'm always interested in new opportunities, whether it's exciting projects to work on together, hackathons, or new job roles. 
+                  Feel free to reach out if you'd like to collaborate, have a coffee chat, or even just say hi!
+                  Let's connect and create something amazing together!!
                 </p>
               </motion.div>
             </motion.div>

@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { socialLinks } from '../../data/portfolio';
 import Icon from '../ui/Icon';
 import gitHubIcon from '../../assets/images/github_logo.png';
-import linkedinIcon from '../../assets/images/linkedin_logo.png';
+import linkedinIcon from '../../assets/images/new_linkedin_logo.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
