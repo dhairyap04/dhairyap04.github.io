@@ -15,6 +15,11 @@ const Navigation: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleResumeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.open('/resume.pdf', '_blank');
+  };
+
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
@@ -22,6 +27,8 @@ const Navigation: React.FC = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'Resume', href: '/resume.pdf', isExternal: true },
   ];
 
   const scrollToTop = () => {
@@ -61,14 +68,25 @@ const Navigation: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <HashLink
-                  to={item.href}
-                  className="text-white hover:text-electric-blue transition-colors duration-300 font-medium relative group"
-                  smooth
-                >
-                  {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-neon-cyan transition-all duration-300 group-hover:w-full"></span>
-                </HashLink>
+                {item.isExternal ? (
+                  <a
+                    href={item.href}
+                    onClick={handleResumeClick}
+                    className="text-white hover:text-electric-blue transition-colors duration-300 font-medium relative group"
+                  >
+                    {item.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-neon-cyan transition-all duration-300 group-hover:w-full"></span>
+                  </a>
+                ) : (
+                  <HashLink
+                    to={item.href}
+                    className="text-white hover:text-electric-blue transition-colors duration-300 font-medium relative group"
+                    smooth
+                  >
+                    {item.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-neon-cyan transition-all duration-300 group-hover:w-full"></span>
+                  </HashLink>
+                )}
               </motion.div>
             ))}
           </div>
@@ -143,14 +161,27 @@ const Navigation: React.FC = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <HashLink
-                      to={item.href}
-                      className="block text-white hover:text-electric-blue transition-colors duration-300 font-medium py-2"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      smooth
-                    >
-                      {item.name}
-                    </HashLink>
+                    {item.isExternal ? (
+                      <a
+                        href={item.href}
+                        onClick={(e) => {
+                          handleResumeClick(e);
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="block text-white hover:text-electric-blue transition-colors duration-300 font-medium py-2"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <HashLink
+                        to={item.href}
+                        className="block text-white hover:text-electric-blue transition-colors duration-300 font-medium py-2"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        smooth
+                      >
+                        {item.name}
+                      </HashLink>
+                    )}
                   </motion.div>
                 ))}
                 <motion.div

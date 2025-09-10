@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 // Using absolute paths for images from public folder
 const githubIcon = '/images/github_logo.png';
 const linkedinIcon = '/images/linkedin_logo.png';
@@ -16,6 +18,16 @@ const gitIcon = '/images/git_logo.png';
 const vscodeIcon = '/images/vscode_logo.png';
 const algorithmsIcon = '/images/algorithms_logo.png';
 const oopIcon = '/images/oop_logo.jpeg';
+const cIcon = '/images/c_logo.png';
+const djangoIcon = '/images/django_logo.png';
+const flaskIcon = '/images/flask_logo.png';
+const mongoDBIcon = '/images/mongodb_logo.png';
+const linuxIcon = '/images/linux_logo.png';
+const kubernetesIcon = '/images/kubernetes_logo.png';
+const bootstrapIcon = '/images/bootstrap_logo.png';
+const agileIcon = '/images/agile_logo.png';
+const restapiIcon = '/images/restapi_logo.png';
+const viteIcon = '/images/vite_logo.png';
 
 export interface Project {
   id: number;
@@ -77,24 +89,34 @@ export const skills: Skill[] = [
   { name: "HTML5", level: 95, category: "frontend", icon: html5Icon },
   { name: "CSS3", level: 90, category: "frontend", icon: css3Icon },
   { name: "Tailwind CSS", level: 80, category: "frontend", icon: tailwindIcon },
-  
+  { name: "Vite.js", level: 70, category: "frontend", icon: viteIcon },
+  { name: "Bootstrap", level: 65, category: "frontend", icon: bootstrapIcon },
+
   // Backend
   { name: "Node.js", level: 70, category: "backend", icon: nodejsIcon },
   { name: "Python", level: 85, category: "backend", icon: pythonIcon },
   { name: "Java", level: 80, category: "backend", icon: javaIcon },
   { name: "SQL", level: 75, category: "backend", icon: sqlIcon },
+  { name: "Django", level: 70, category: "backend", icon: djangoIcon },
+  { name: "Flask", level: 60, category: "backend", icon: flaskIcon },
+  { name: "C", level: 65, category: "backend", icon: cIcon },
+  { name: "MongoDB", level: 70, category: "backend", icon: mongoDBIcon },
 
   // Tools
   { name: "Git", level: 85, category: "tools", icon: gitIcon },
   { name: "GitHub", level: 90, category: "tools", icon: githubIcon },
   { name: "VS Code", level: 95, category: "tools", icon: vscodeIcon },
   { name: "Docker", level: 60, category: "tools", icon: dockerIcon },
-  
+  { name: "Linux", level: 70, category: "tools", icon: linuxIcon },
+  { name: "Kubernetes", level: 50, category: "tools", icon: kubernetesIcon },
+
   // Concepts
   { name: "Data Structures", level: 85, category: "concepts", icon: "📊" },
   { name: "Algorithms", level: 80, category: "concepts", icon: algorithmsIcon },
   { name: "OOP", level: 90, category: "concepts", icon: oopIcon },
   { name: "Responsive Design", level: 85, category: "concepts", icon: "📱" },
+  { name: "RESTful APIs", level: 75, category: "concepts", icon: restapiIcon },
+  { name: "Agile Methodologies", level: 70, category: "concepts", icon: agileIcon },
 ];
 
 export const projects: Project[] = [
@@ -149,8 +171,8 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "BrickBreaker",
-    description: "Interactive android application for a classic brick-breaking game",
-    longDescription: "An interactive android application that brings the classic brick-breaking game back with a twist. Features include multiple levels, power-ups, and user authentication. Built with a focus on user experience and performance.",
+    description: "Interactive web application for a classic brick-breaking game",
+    longDescription: "An interactive web application that brings the classic brick-breaking game back with a twist. Features include multiple levels, power-ups, and user authentication. Built with a focus on user experience and performance.",
     image: "/api/placeholder/600/400",
     technologies: ["Python", "PyGame", "Git"],
     githubUrl: "https://github.com/dhairyap04/BrickBreaker",
